@@ -189,3 +189,21 @@ footer{
     text-decoration: none;
     color:black;
 }
+@media screen and (max-width:600px)
+{
+#grad{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(7, 3rem);
+    grid-template-areas: "camiseta"
+    "campera"
+    ;
+}
+.camiseta{
+    grid-area: camiseta;
+}
+.campera{
+    grid-area: campera;
+}
+
+}
