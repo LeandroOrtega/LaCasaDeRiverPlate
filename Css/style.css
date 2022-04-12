@@ -143,12 +143,12 @@ section p span{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 nav{
-    display:grid;
+    display:flex;
     grid-template-columns: 3fr 1fr ;
     grid-gap: 2rem;
 }
 .barraLateral{
-    display: grid;
+    display: flex;
     flex-direction: column;
     justify-items: center;
     justify-content: space-evenly;
@@ -189,21 +189,48 @@ footer{
     text-decoration: none;
     color:black;
 }
-@media screen and (max-width:600px)
+@media screen and (max-width:780px)
 {
-#grad{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(7, 3rem);
-    grid-template-areas: "camiseta"
-    "campera"
-    ;
-}
-.camiseta{
-    grid-area: camiseta;
-}
-.campera{
-    grid-area: campera;
+    body{
+        size: 100vh 100vw;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows:2fr 1fr 1fr 3fr 3fr 2fr 1fr ;
+        grid-template-areas: 
+
+
+    }
+    .footer{
+        display: flex;
+        grid-area: footer;
+    }
+    .barraLateral{
+        display: flex;
+        grid-area: barralat;
+    }
+    .row{
+        display: rid;
+        grid-area: row;
+    }
+    .logo{
+        display: grid;
+        grid-area: logo;
+    }
+    .linea2Encabezado{
+        display: grid;
+        grid-area: linea;
+    }
+    .titulo__seccion{
+        display: grid;
+        grid-area: titulo;
+    }
+    .row2{
+        display: grid;
+        grid-area: row2;
+    }
+
+
+
 }
 
 }
