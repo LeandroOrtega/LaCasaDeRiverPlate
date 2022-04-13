@@ -6,7 +6,7 @@
 .descripcion__sitio{
     text-align: center;
     font-size: large;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
 .titulo__seccion{
     color: white;
@@ -17,7 +17,7 @@
     width: 30rem;
     height: 2rem; 
     text-align: center;
-    font-size: 200%;
+    font-size: 120%;
   
 }
 .redesSociales{
@@ -29,21 +29,15 @@ justify-items: center;
 margin: 1rem;
 }
 .row{
-    display: grid;
-    grid-template-rows:1fr;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-gap: 7rem;
-    font-size: 130%;
-    margin-left: 10rem;
-    justify-items:start;
-    justify-content: start;
+    display:flex;
+  width: 50%;
    
 }
 .camiseta{
     border: solid;
 }
 .pantalon{
-    display: grid; border: solid;
+ border: solid;
 }
 .campera{
     border: solid;
@@ -115,7 +109,7 @@ footer {
     
 }
 .seccionesVenta{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
     font-size: 120%;
     display: flex;
    justify-items: center;
@@ -127,8 +121,9 @@ footer {
     display: grid;
     justify-items:center;
     text-align: center;
-    
-    
+}
+#art{
+    border: solid black
 }
 #grad{
     background-image: linear-gradient(to left, rgb(245, 243, 238), rgb(243, 223, 215) );
@@ -143,7 +138,7 @@ section p span{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 nav{
-    display:flex;
+    display:grid;
     grid-template-columns: 3fr 1fr ;
     grid-gap: 2rem;
 }
@@ -151,7 +146,7 @@ nav{
     display: flex;
     flex-direction: column;
     justify-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 background-color: rgb(202, 199, 199);
 border: 0.3rem solid black;
 margin:0rem 3rem 7rem auto;
@@ -188,42 +183,4 @@ footer{
 .elementos_footer a {
     text-decoration: none;
     color:black;
-}
-@media screen and (max-width:780px)
-{
-    body{
-        size: 100vh 100vw;
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows:2fr 1fr 1fr 3fr 3fr 2fr 1fr ;
-    }
-    .footer{
-        display: flex;
-        grid-area: footer;
-    }
-    .barraLateral{
-        display: flex;
-        grid-area: barralat;
-    }
-    .row{
-        display: rid;
-        grid-area: row;
-    }
-    .logo{
-        display: grid;
-        grid-area: logo;
-    }
-    .linea2Encabezado{
-        display: grid;
-        grid-area: linea;
-    }
-    .titulo__seccion{
-        display: grid;
-        grid-area: titulo;
-    }
-    .row2{
-        display: grid;
-        grid-area: row2;
-    }
-
 }
