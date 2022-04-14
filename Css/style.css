@@ -5,18 +5,17 @@
 }
 .descripcion__sitio{
     text-align: center;
-    font-size: large;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .titulo__seccion{
     color: white;
     background-color:rgb(236,46,46);
-    margin: 1rem 1rem 1rem 15rem;
+   padding: 1rem;
     border:0.3rem solid black;
-    padding: 0.4rem;
-    width: 30rem;
-    height: 2rem; 
+    display: flex;
+   
     text-align: center;
+    justify-content: center;
+    justify-self: flex-start;
     font-size: 200%;
   
 }
@@ -43,7 +42,7 @@ margin: 1rem;
     border: solid;
 }
 .pantalon{
-    display: grid; border: solid;
+     border: solid;
 }
 .campera{
     border: solid;
@@ -188,42 +187,4 @@ footer{
 .elementos_footer a {
     text-decoration: none;
     color:black;
-}
-@media screen and (max-width:780px)
-{
-    body{
-        size: 100vh 100vw;
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows:2fr 1fr 1fr 3fr 3fr 2fr 1fr ;
-    }
-    .footer{
-        display: flex;
-        grid-area: footer;
-    }
-    .barraLateral{
-        display: flex;
-        grid-area: barralat;
-    }
-    .row{
-        display: rid;
-        grid-area: row;
-    }
-    .logo{
-        display: grid;
-        grid-area: logo;
-    }
-    .linea2Encabezado{
-        display: grid;
-        grid-area: linea;
-    }
-    .titulo__seccion{
-        display: grid;
-        grid-area: titulo;
-    }
-    .row2{
-        display: grid;
-        grid-area: row2;
-    }
-
 }
