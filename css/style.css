@@ -183,8 +183,6 @@ section p{
     align-items: center;
     align-content: center;
 }
-nav{
-}
 .barraLateral{
     display: flex;
     flex-direction: column;
